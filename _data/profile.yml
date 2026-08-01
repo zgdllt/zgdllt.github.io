@@ -3,7 +3,7 @@ secondary_name: "李孟涵"
 navbar_name: "Menghan Li"
 
 positions:
-- name: Undergraduate Student, Tsinghua University
+- name: Undergraduate Student, Department of Automation, Tsinghua University
 - name: Member, Tsinghua Hephaestus
 - name: Member, THUSCC
 
@@ -22,8 +22,9 @@ github: zgdllt
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am interested in embodied intelligence and high-performance computing (HPC) for robot simulation and control.
-    My current work focuses on physics engines, humanoid locomotion, and learning-based motion generation.
+    I am interested in embodied intelligence, physics-based animation, and differentiable physics.
+    I have hands-on development experience with Isaac Lab and MuJoCo, focusing on physics engines,
+    humanoid locomotion, and learning-based motion generation.
   </p>
   <p>
     I am a member of Tsinghua Hephaestus and THUSCC. In Tsinghua Hephaestus, I participate in humanoid robot soccer,
@@ -36,20 +37,21 @@ portrait_caption: >-
 
 education:
 - name: Tsinghua University
+  dept: Department of Automation
   position: >- 
-    Undergraduate Student
-  date: Present
+    Undergraduate Student · GPA: 3.7/4.0
+  date: Aug 2024 - Present
 
 experience:
 - name: Tsinghua Hephaestus
   position: Member
-  date: Present
+  date: Jul 2025 - Present
 - name: THUSCC
   position: Member
-  date: Present
+  date: Apr 2026 - Present
 
+awards_title: Team Tsinghua Hephaestus
 awards:
-- name: World Champion, Robot Soccer 5v5, 1st WHRG
-  date: 1st WHRG
-- name: Champion, RoboCup China Open 2026 Large Size 3v3
-  date: 2026
+- name: 1st Place, Large Size Humanoid Soccer League, RoboCup 2026
+- name: 1st Place, Large Size Humanoid Soccer League, RoboCup China Open 2026
+- name: 1st Place, 5v5 Soccer, 2025 World Humanoid Robot Games

@@ -60,13 +60,15 @@
                     {% if site.data.profile.awards %}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
-                            <h6>Honors & Awards</h6>
+                            <h6>{{ site.data.profile.awards_title | default: "Honors & Awards" }}</h6>
                             <ul class="list small pl-3 mb-1">
                                 {% for item in site.data.profile.awards %}
                                 <li>
                                     <div class="d-flex flex-column flex-sm-row">
                                         <div>{{ item.name }}</div>
+                                        {% if item.date %}
                                         <div class="ml-sm-auto mt-sm-auto no-break"><em>{{ item.date }}</em></div>
+                                        {% endif %}
                                     </div>
                                 </li>
                                 {% endfor %}
