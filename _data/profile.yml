@@ -5,11 +5,9 @@ navbar_name: "Menghan Li"
 positions:
 - name: Undergraduate Student, Department of Automation, Tsinghua University
 - name: Member, Tsinghua Hephaestus
-- name: Member, THUSCC
 
 
 email: "limh24@mails.tsinghua.edu.cn"
-# cv_link: link-to-your-cv-file
 # gscholar:
 github: zgdllt
 # twitter:
@@ -22,13 +20,13 @@ github: zgdllt
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am interested in embodied intelligence, physics-based animation, and differentiable physics.
-    I have hands-on development experience with Isaac Lab and MuJoCo, focusing on physics engines,
-    humanoid locomotion, and learning-based motion generation.
+    I am interested in embodied intelligence, physics-based animation, differentiable physics,
+    and efficient robot simulation. I work with MuJoCo, Isaac Lab, and PyTorch on humanoid
+    navigation, locomotion, and learning-based control.
   </p>
   <p>
-    I am a member of Tsinghua Hephaestus and THUSCC. In Tsinghua Hephaestus, I participate in humanoid robot soccer,
-    including motion, simulation, and competition-oriented system development.
+    At Tsinghua Hephaestus, I contribute to the long-term engineering of humanoid robot soccer,
+    including navigation, obstacle perception, simulation, and competition-oriented development.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -44,14 +42,46 @@ education:
 
 experience:
 - name: Tsinghua Hephaestus
-  position: Member
+  position: Navigation, Perception, and Simulation
   date: Jul 2025 - Present
-- name: THUSCC
-  position: Member
-  date: Apr 2026 - Present
+
+projects:
+- name: Humanoid Soccer Navigation and Obstacle Perception
+  affiliation: Tsinghua Hephaestus
+  date: 2025 - Present
+  bullets:
+  - Developed an A* path planner and trained a reinforcement-learning navigation policy for humanoid soccer.
+  - Used forward kinematics to project the robot's own joints into the camera image and filter self-occlusions from obstacle observations.
+- name: Humanoid Roller-Skating Control and PhysX Wheel Modeling
+  affiliation: Research project
+  date: 2025 - Present
+  bullets:
+  - Replaced mesh-based wheel collisions with thin cylindrical slices to avoid abnormally high slip ratios in PhysX.
+  - Identified the simulation cost introduced by many radius-specific collision bodies and am investigating performance-oriented optimization methods.
+  - Participated in reinforcement-learning training and co-authored the accepted CLAWAR 2026 paper.
+
+technical_skills:
+- name: Programming and systems
+  value: C++, Python, Linux, Git
+- name: Simulation and learning
+  value: MuJoCo, Isaac Lab, PyTorch
+- name: Current learning focus
+  value: HPC principles, parallel computing, and performance analysis
+
+relevant_courses:
+- Computer Programming
+- Data Structures
+- Discrete Mathematics
+- Probability and Statistics
+- Linear Algebra
+- Signals and Systems
+- Intelligent Robotics Project Training
 
 awards_title: Team Tsinghua Hephaestus
 awards:
 - name: 1st Place, Large Size Humanoid Soccer League, RoboCup 2026
+  date: 2026
 - name: 1st Place, Large Size Humanoid Soccer League, RoboCup China Open 2026
+  date: 2026
 - name: 1st Place, 5v5 Soccer, 2025 World Humanoid Robot Games
+  date: 2025

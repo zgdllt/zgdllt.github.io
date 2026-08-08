@@ -91,3 +91,47 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+
+.profile-project {
+    padding: 0.8rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.profile-project:first-child {
+    border-top: 0;
+    padding-top: 0.25rem;
+}
+
+.profile-project-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.profile-project-date {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+.profile-project li + li {
+    margin-top: 0.25rem;
+}
+
+.profile-fact-list dt {
+    margin-bottom: 0.1rem;
+}
+
+.profile-fact-list dd {
+    margin-bottom: 0.55rem;
+}
+
+@media (max-width: 575.98px) {
+    .profile-project-heading {
+        display: block;
+    }
+
+    .profile-project-date {
+        margin-top: 0.15rem;
+    }
+}

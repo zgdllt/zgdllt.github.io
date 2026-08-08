@@ -79,6 +79,65 @@
 
                 </div>
 
+                {% if site.data.profile.projects %}
+                <hr class="mx-2 my-3">
+                <div class="mx-2">
+                    <h6>Selected Engineering</h6>
+                    <div class="profile-project-list">
+                        {% for item in site.data.profile.projects %}
+                        <div class="profile-project">
+                            <div class="profile-project-heading">
+                                <div>
+                                    <strong>{{ item.name }}</strong>
+                                    {% if item.affiliation %}
+                                    <div class="small text-muted">{{ item.affiliation }}</div>
+                                    {% endif %}
+                                </div>
+                                {% if item.date %}
+                                <div class="small text-muted profile-project-date"><em>{{ item.date }}</em></div>
+                                {% endif %}
+                            </div>
+                            {% if item.bullets %}
+                            <ul class="small mb-0 mt-2 pl-3">
+                                {% for bullet in item.bullets %}
+                                <li>{{ bullet }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if site.data.profile.technical_skills or site.data.profile.relevant_courses %}
+                <hr class="mx-2 my-3">
+                <div class="row">
+                    {% if site.data.profile.technical_skills %}
+                    <div class="col-lg-6">
+                        <div class="mx-2 my-1">
+                            <h6>Technical Skills</h6>
+                            <dl class="small mb-1 profile-fact-list">
+                                {% for item in site.data.profile.technical_skills %}
+                                <dt>{{ item.name }}</dt>
+                                <dd>{{ item.value }}</dd>
+                                {% endfor %}
+                            </dl>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if site.data.profile.relevant_courses %}
+                    <div class="col-lg-6">
+                        <div class="mx-2 my-1">
+                            <h6>Relevant Coursework</h6>
+                            <p class="small mb-1">{{ site.data.profile.relevant_courses | join: ", " }}</p>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+
             </div>
         </div>
     </div>
